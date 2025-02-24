@@ -1,0 +1,24 @@
+RPC service example cloudflare...
+
+we created a service in backend app 
+and then connect it in the wrangler file of frontend 
+
+//RPC worker to worker 
+
+we can use function of one worker to another worker by using an entrypoint in worker one
+
+youtube reference
+http://youtube.com/watch?v=Ei8VRDNoD7I
+
+github example
+https://github.com/megaconfidence/workers-rpc-example
+
+
+but just adding simple service in wrangler file
+
+services = [
+  { binding = "WORKER_ONE", service = "worker-one" }
+]
+
+(binding) is the name of the service we want to use from another worker
+(service) is the name of the project or the name we use in wrangler file

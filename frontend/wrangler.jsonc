@@ -14,8 +14,8 @@
   "services": [
     {
       "binding": "MyServerService",
-      "service": "backend",
-      "entrypoint": "MyServerService"
+      "service": "backend", //name of the project
+      "entrypoint": "MyServerService"  //name of service
     }
   ],
   // "migrations": [
